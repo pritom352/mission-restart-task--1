@@ -7,15 +7,16 @@ hamburgerBtn.addEventListener("click", () => {
 //!navbar button color
 const currentPage = window.location.pathname;
 
-if (currentPage.includes("products.html")) {
+if (currentPage.includes("products")) {
   document
     .getElementById("productLink")
-    .classList.add("text-[#4F39F6]", "font-bold");
-} else {
+    .classList.add("text-purple-600", "font-bold");
+} else if (currentPage === "/" || currentPage.includes("index")) {
   document
     .getElementById("homeLink")
-    .classList.add("text-[#4F39F6]", "font-bold");
+    .classList.add("text-purple-600", "font-bold");
 }
+
 // console.log("hello world");
 
 const categories = () => {
